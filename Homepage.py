@@ -1,11 +1,16 @@
 import streamlit as lit
-import datetime
+
 
 cnis= "CNISLogo.png"
 bits="bits-logo.png"
 img_1 = "ESL_logo.png"
 img_2 = "MTC logo.png"
 icon = "icon.jpg"
+
+lit.set_page_config(
+    page_title="CINS 2023",
+    page_icon=cnis,
+)
 
 pages = {
     "CINS 2023": "CINS 2023",
