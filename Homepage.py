@@ -1,22 +1,6 @@
 import streamlit as lit
 import datetime
 
-
-def get_text_style(current_datetime, target_date):
-    current_time = current_datetime.time()
-
-    # Compare the current date with the given target date
-    if current_datetime.date() == target_date:
-        # Within the target date, apply time-based style changes
-        if current_time < datetime.time(12, 0):
-            return "color: green; font-weight: bold;"  # Morning style.
-        elif current_time < datetime.time(20, 22):
-            return "color: orange; font-weight: bold;"  # Afternoon style.
-        else:
-            return "color: blue; font-weight: bold;"  # Evening style.
-    else:
-        return "color: black; font-weight: normal;"  # Default style if the target date is not matched.
-
 cnis= "CNISLogo.png"
 bits="bits-logo.png"
 img_1 = "ESL_logo.png"
@@ -24,7 +8,7 @@ img_2 = "MTC logo.png"
 icon = "icon.jpg"
 
 pages = {
-    "CNIS 2023": "CNIS 2023",
+    "CINS 2023": "CINS 2023",
     "Day 1 - 18th October": "Day 1 - 18th October",
     "Day 2 - 19th October": "Day 2 - 19th October",
     "Day 3 - 20th October": "Day 3 - 20th October",
@@ -39,7 +23,7 @@ page = getattr(lit.session_state, "page", list(pages.keys())[0])
 
 lit.title(pages[page])
 
-if page == "CNIS 2023":
+if page == "CINS 2023":
     lit.write("")
     lit.image([cnis,bits], use_column_width=False, width=200)
     lit.write("CINS 2023 is the first international conference which is aimed to address the recent developments in the field of computing, intelligence techniques and networks over the globe. The theme of the event is “Seamless Computing for Next Generation”. The aim of conference is to bring together the academia, industry, and forums working in areas of computing, intelligent techniques and networks. The conference will help to promote and explore innovative and ambitious ideas, trends and future challenges towards seamless computing.")
@@ -51,6 +35,12 @@ if page == "CNIS 2023":
     col1.write("Click on")
     col2.image(icon, width=20)
     col3.write("icon to view the schedule")
+    lit.write("")
+    lit.write("")
+    lit.write("")
+    lit.write("")
+    lit.write("Venues will be updated, so keep an eye on this space for further updates!")
+
     
 if page == "Day 1 - 18th October":
 
