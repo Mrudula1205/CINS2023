@@ -1,6 +1,6 @@
 import streamlit as lit
 import datetime
-import time
+
 
 def get_text_style(current_datetime, target_date):
     current_time = current_datetime.time()
@@ -21,6 +21,7 @@ cnis= "CNISLogo.png"
 bits="bits-logo.png"
 img_1 = "ESL_logo.png"
 img_2 = "MTC logo.png"
+icon = "icon.jpg"
 
 pages = {
     "CNIS 2023": "CNIS 2023",
@@ -40,11 +41,17 @@ lit.title(pages[page])
 
 if page == "CNIS 2023":
     lit.write("")
-    
     lit.image([cnis,bits], use_column_width=False, width=200)
     lit.write("CINS 2023 is the first international conference which is aimed to address the recent developments in the field of computing, intelligence techniques and networks over the globe. The theme of the event is “Seamless Computing for Next Generation”. The aim of conference is to bring together the academia, industry, and forums working in areas of computing, intelligent techniques and networks. The conference will help to promote and explore innovative and ambitious ideas, trends and future challenges towards seamless computing.")
     lit.markdown("[Click here to find out more about the conference!](https://www.bits-dubai.ac.ae/cins2023/home1.html)")
 
+    col1, col2, col3 = lit.columns([0.11,0.05,1])
+
+# Add content to the columns
+    col1.write("Click on")
+    col2.image(icon, width=20)
+    col3.write("icon to view the schedule")
+    
 if page == "Day 1 - 18th October":
 
     lit.write(" 08:30 AM | Registration")
