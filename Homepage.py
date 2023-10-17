@@ -13,7 +13,7 @@ lit.set_page_config(
 )
 
 pages = {
-    "CINS 2023": "CINS 2023",
+    "CINS 2023": "Welcome To CINS 2023",
     "Day 1 - 18th October": "Day 1 - 18th October",
     "Day 2 - 19th October": "Day 2 - 19th October",
     "Day 3 - 20th October": "Day 3 - 20th October",
@@ -28,7 +28,7 @@ page = getattr(lit.session_state, "page", list(pages.keys())[0])
 
 lit.title(pages[page])
 
-if page == "Welcome To CINS 2023":
+if page == "CINS 2023":
     lit.write("")
     lit.image([cnis,bits], use_column_width=False, width=150)
     lit.write("CINS 2023 is the first international conference which is aimed to address the recent developments in the field of computing, intelligence techniques and networks over the globe. The theme of the event is “Seamless Computing for Next Generation”. The aim of conference is to bring together the academia, industry, and forums working in areas of computing, intelligent techniques and networks. The conference will help to promote and explore innovative and ambitious ideas, trends and future challenges towards seamless computing.")
