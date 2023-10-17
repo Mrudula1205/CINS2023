@@ -33,7 +33,6 @@ if page == "CINS 2023":
     lit.image([cnis,bits], use_column_width=False, width=150)
     lit.write("CINS 2023 is the first international conference which is aimed to address the recent developments in the field of computing, intelligence techniques and networks over the globe. The theme of the event is “Seamless Computing for Next Generation”. The aim of conference is to bring together the academia, industry, and forums working in areas of computing, intelligent techniques and networks. The conference will help to promote and explore innovative and ambitious ideas, trends and future challenges towards seamless computing.")
     lit.markdown("[Click here to find out more about the conference!](https://www.bits-dubai.ac.ae/cins2023/home1.html)")
-
     col1, col2, col3 = lit.columns([0.11,0.05,1])
 
 # Add content to the columns
@@ -43,15 +42,15 @@ if page == "CINS 2023":
     lit.write("")
     lit.write("")
     lit.write("")
-    lit.write("")
-    lit.write("Venues will be updated, so keep an eye on this space for further updates!")
-
+    lit.success("Venue: Auditorium (G07) unless stated otherwise") 
+    lit.write("Keep an eye on this space for further updates!")
     
 if page == "Day 1 - 18th October":
 
     lit.write(" 08:30 AM | Registration")
     lit.write(" 09:30 AM | Opening Remarks")
-    lit.write(" 10:00 AM | Keynote Address - Dr. Christoph Benzmüller")
+    with lit.expander("10:00 AM | Keynote Address"):
+        lit.markdown(''' ### Dr. Christoph Benzmüller \n\n Chair for AI Systems Engineering, Otto-Friendrich-Universitat Bamberg \n\nFU Berlin, Germany''')
     lit.write(" 11:00 AM | Break")
     lit.write(" 11:15 AM | Generative AI Expo")
     lit.write(" 01:00 PM | Lunch Break")
@@ -60,13 +59,18 @@ if page == "Day 1 - 18th October":
 
 if page == "Day 2 - 19th October":
     lit.write(" 09:00 AM | Keynote Address - Dr. Jyotika Singh")
-    lit.write(" 10:00 AM | Intel OneAPI Workshop - Dr. Shriram K. Vasudevan")
+    with lit.expander("09:00 AM | Keynote Address"):
+        lit.markdown(''' ### Dr. Jyotika Singh \n\n Director of Data Science, Placemaker, USA''')
+    with lit.expander("10:00 AM | Intel OneAPI Workshop"):
+        lit.markdown(''' ### Dr. Shriram K. Vasudevan \n\n Intel Software Innovator, Intel Coorperation Ltd''')
     lit.write(" 01:00 PM | Lunch Break")
     lit.write(" 02:30 PM | Paper Presentation (Offline Mode)")
     lit.write(" 04:30 PM | Refreshment")
     
 if page == "Day 3 - 20th October":
     lit.write(" 09:00 AM | Cyber & Digital Forensics Workshop - Mr. Nikhil Mahadeshwar")
+    with lit.expander("09:00 AM | Cyber & Digital Forensics Workshop"):
+        lit.markdown(''' ### Mr. Nikhil Mahadeshwar \n\n CEO, Cyber Secured India''')
     lit.write(" 10:00 AM | Microsoft ESL Global Summit")
     lit.write(" 12:00 PM | Winner Prize Distribution")
     lit.write(" 12:30 PM | Valedictory")
