@@ -58,7 +58,7 @@ if page == "Day 1 - 18th October":
     lit.write(" 04:30 PM | Refreshment")
 
 if page == "Day 2 - 19th October":
-    lit.write(" 09:00 AM | Keynote Address - Dr. Jyotika Singh")
+
     with lit.expander("09:00 AM | Keynote Address"):
         lit.markdown(''' ### Dr. Jyotika Singh \n\n Director of Data Science, Placemaker, USA''')
     with lit.expander("10:00 AM | Intel OneAPI Workshop"):
@@ -68,7 +68,7 @@ if page == "Day 2 - 19th October":
     lit.write(" 04:30 PM | Refreshment")
     
 if page == "Day 3 - 20th October":
-    lit.write(" 09:00 AM | Cyber & Digital Forensics Workshop - Mr. Nikhil Mahadeshwar")
+    
     with lit.expander("09:00 AM | Cyber & Digital Forensics Workshop"):
         lit.markdown(''' ### Mr. Nikhil Mahadeshwar \n\n CEO, Cyber Secured India''')
     lit.write(" 10:00 AM | Microsoft ESL Global Summit")
