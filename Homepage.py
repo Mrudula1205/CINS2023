@@ -30,7 +30,7 @@ lit.title(pages[page])
 
 if page == "CINS 2023":
     lit.write("")
-    lit.image([cnis,bits], use_column_width=False, width=200)
+    lit.image([cnis,bits], use_column_width=False, width=100)
     lit.write("CINS 2023 is the first international conference which is aimed to address the recent developments in the field of computing, intelligence techniques and networks over the globe. The theme of the event is “Seamless Computing for Next Generation”. The aim of conference is to bring together the academia, industry, and forums working in areas of computing, intelligent techniques and networks. The conference will help to promote and explore innovative and ambitious ideas, trends and future challenges towards seamless computing.")
     lit.markdown("[Click here to find out more about the conference!](https://www.bits-dubai.ac.ae/cins2023/home1.html)")
 
