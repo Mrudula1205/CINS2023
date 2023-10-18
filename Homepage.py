@@ -65,7 +65,6 @@ if page == "Day 2 - 19th October":
         lit.markdown(''' ### Dr. Shriram K. Vasudevan \n\n Intel Software Innovator, Intel Coorperation Ltd''')
     lit.write(" 01:00 PM | Lunch Break")
     lit.write(" 02:30 PM | Paper Presentation (Online)")
-    lit.write(" 04:30 PM | Refreshment")
     lit.success("Venue: TelePresence Room unless stated otherwise") 
     
 if page == "Day 3 - 20th October":
