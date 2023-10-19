@@ -69,12 +69,12 @@ if page == "Day 2 - 19th October":
     
 if page == "Day 3 - 20th October":
     
-    with lit.expander("09:00 AM | Cyber & Digital Forensics Workshop"):
-        lit.markdown(''' ### Mr. Nikhil Mahadeshwar \n\n CEO, Cyber Secured India''')
-    lit.write(" 10:00 AM | Microsoft ESL Global Summit")
-    lit.write(" 12:00 PM | Winner Prize Distribution")
-    lit.write(" 12:30 PM | Valedictory")
-    lit.write(" 01:00 PM | Lunch")
+    
+    lit.write(" 10:00 AM | ESL Generative AI Global Summit Expo")
+    lit.write(" 10:30 AM | ESL Projects Presentation")
+    lit.write(" 11:10 AM | Groove")
+    lit.write(" 11:30 AM | Valedictory and Award Distribution")
+    lit.write(" 12:00 PM | Lunch")
     
 
 if page == "MTC ESL GenAI Global Summit":
